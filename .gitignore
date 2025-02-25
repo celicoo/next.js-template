@@ -1,0 +1,10 @@
+.env
+.next/
+.turbo/
+*.pem
+next-env.d.ts
+node_modules/
+public/admin/
+sitemap-*.xml
+sitemap.xml
+tina/__generated__/

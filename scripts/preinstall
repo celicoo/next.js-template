@@ -1,0 +1,10 @@
+#!/bin/bash
+
+node --eval "
+  if (globalThis.process.env.npm_execpath.indexOf('pnpm') === -1) {
+    throw new globalThis.Error(
+      'This project uses pnpm for package management. ' +
+      'Please install pnpm and use pnpm install to proceed.'
+    );
+  }
+"

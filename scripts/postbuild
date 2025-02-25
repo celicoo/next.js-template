@@ -1,0 +1,4 @@
+#!/bin/bash
+
+next-sitemap --config next-sitemap.config.cjs
+jampack .next/

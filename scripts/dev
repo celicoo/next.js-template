@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tinacms dev --command "next dev"

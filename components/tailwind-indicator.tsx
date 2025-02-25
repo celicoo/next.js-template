@@ -1,0 +1,79 @@
+import type { ReactNode } from "react";
+
+import env from "~/env";
+
+export default function TailwindIndicator(): ReactNode {
+  return (
+    env.NODE_ENV === "development" && (
+      <div
+        className={`
+          fixed
+          bottom-1
+          left-1
+          z-50
+          flex
+          size-6
+          items-center
+          justify-center
+          rounded-full
+          bg-foreground
+          text-xs
+          text-background
+        `}
+      >
+        <div
+          className={`
+            block
+            sm:hidden
+          `}
+        >
+          xs
+        </div>
+        <div
+          className={`
+            hidden
+            md:hidden
+            sm:block
+          `}
+        >
+          sm
+        </div>
+        <div
+          className={`
+            hidden
+            lg:hidden
+            md:block
+          `}
+        >
+          md
+        </div>
+        <div
+          className={`
+            hidden
+            lg:block
+            xl:hidden
+          `}
+        >
+          lg
+        </div>
+        <div
+          className={`
+            hidden
+            2xl:hidden
+            xl:block
+          `}
+        >
+          xl
+        </div>
+        <div
+          className={`
+            hidden
+            2xl:block
+          `}
+        >
+          2xl
+        </div>
+      </div>
+    )
+  );
+}

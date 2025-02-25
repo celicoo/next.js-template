@@ -1,0 +1,37 @@
+{
+  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    // Type checking
+    "strict": true,
+    // Modules
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "~/*": ["*"],
+      "tinacms/rich-text": ["node_modules/tinacms/dist/rich-text"]
+    },
+    "resolveJsonModule": true,
+    // Emit
+    "noEmit": true,
+    // Editor support
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // Interop constraints
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    // Language and environment
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES2022",
+    // Projects
+    "incremental": true,
+    // Completeness
+    "skipLibCheck": true,
+    "allowJs": true
+  }
+}

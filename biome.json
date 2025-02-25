@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ignoreUnknown": true
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "production"
+  },
+  "formatter": {
+    "indentStyle": "space"
+  }
+}
